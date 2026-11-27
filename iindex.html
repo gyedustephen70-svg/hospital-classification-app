@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Heart Disease Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z" fill="currentColor"/>
+        </svg>
+        <span>CardioCare <small>Hospital Diagnostics</small></span>
+      </div>
+      <span class="badge">AI Screening Tool</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h1>Heart Disease Risk Prediction</h1>
+      <p>Enter the patient details below. The trained machine learning model will estimate whether heart disease is likely.</p>
+    </section>
+
+    <section class="card">
+      <h2>Patient Information</h2>
+      <div id="status" class="status" role="status">Loading form…</div>
+
+      <form id="predict-form" novalidate hidden>
+        <div id="fields" class="grid"></div>
+        <div class="actions">
+          <button type="submit" id="submit-btn" class="btn btn-primary">Predict</button>
+          <button type="reset" id="reset-btn" class="btn btn-secondary">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="result" class="card result" hidden aria-live="polite">
+      <h2>Prediction Result</h2>
+      <div class="result-head">
+        <div id="result-icon" class="result-icon"></div>
+        <div>
+          <p id="result-label" class="result-label"></p>
+          <p id="result-prob" class="result-prob"></p>
+        </div>
+      </div>
+      <div class="bar"><div id="bar-fill" class="bar-fill"></div></div>
+      <p class="bar-caption">Model estimated probability of heart disease</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> This tool is a student machine learning project for learning purposes only. It is not a medical device and must not replace advice from a qualified doctor.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

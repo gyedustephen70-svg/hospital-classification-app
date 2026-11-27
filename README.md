@@ -64,4 +64,4 @@ Add your results here after training in Colab:
 
 ## Author
 
-[@gyedustephen70-svg](https://github.com/gyedustephen70-svg) (add your full name and index number here)
+[@gyedustephen70-svg](https://github.com/gyedustephen70-svg) (Stephen Gyedu _PUIT/25230004)
